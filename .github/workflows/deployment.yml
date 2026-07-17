@@ -9,12 +9,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      -name: Checkout code
-      uses: actions/checkout@v4
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-      -name: Deploy a VM
-      uses: appleboy/ssh-action@v1.0.3
-      with:
+      - name: Deploy a VM
+        uses: appleboy/ssh-action@v1.0.3
+        with:
         host: ${{ secerts.SSH_HOST }}
         username: ubuntu
         key: ${{ secerts.SSH_KEY }}
@@ -22,5 +22,5 @@ jobs:
          cd /home/ubuntu/portfolo/portfolio
          git pull
          docker compose up --build
-         
+
          
