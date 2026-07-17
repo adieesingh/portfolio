@@ -15,9 +15,9 @@ jobs:
       - name: Deploy a VM
         uses: appleboy/ssh-action@v1.0.3
         with:
-          host: ${{ secerts.SSH_HOST }}
+          host: ${{ secrets.SSH_HOST }}
           username: ubuntu
-          key: ${{ secerts.SSH_KEY }}
+          key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/ubuntu/portfolo/portfolio
             git pull
