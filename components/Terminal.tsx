@@ -14,7 +14,7 @@ const logLines: LogLine[] = [
   { html: '<span class="text-teal">✓</span> stockline-web <span class="text-amber">/next14</span> ..... building', delay: 300 },
   { html: '<span class="text-teal">✓</span> shorturl-service <span class="text-amber">/azure-vm</span> ..... online', delay: 300 },
   { html: '<span class="text-teal">✓</span> 100xdevs-cohort3 <span class="text-amber">/docker+k8s</span> ..... in progress', delay: 300 },
-  { html: '<span class="text-ink-faint">$</span> uptime: since apr 2025', delay: 400 },
+  { html: '<span class="text-ink-faint">$</span> uptime: since apr 2026', delay: 400 },
 ];
 
 export default function Terminal() {

@@ -10,9 +10,9 @@ const stack = [
 
 const experience = [
   {
-    time: "Apr 2025 — present",
+    time: "Apr 2026 — present",
     role: "Junior Node.js Developer",
-    org: "Feat System, Mumbai",
+    org: "Feat Systems, Mumbai",
     desc: "Building and maintaining Node.js connectors for the Actionabl RPA platform — fuzzy-matching PO and timesheet files, resume-to-JD matching via multipart POST, browser-automated CSV downloads, and ICS calendar generation, all built on the GenericScriptBase pattern.",
   },
   {
@@ -48,7 +48,7 @@ export default function Home() {
             that stay online.
           </h1>
           <p className="text-ink-dim text-[1.05rem] max-w-[46ch] mb-8">
-            Junior Node.js developer at <b className="text-ink font-semibold">Feat System</b>, Mumbai — writing RPA
+            Junior Node.js developer at <b className="text-ink font-semibold">Feat Systems</b>, Mumbai — writing RPA
             connectors, wiring up SaaS backends, and self-hosting side projects on real infrastructure, not just
             localhost.
           </p>
@@ -146,13 +146,23 @@ export default function Home() {
               scaffolding the Next.js 14 App Router frontend with reusable component packages and a generic CRUD API
               client factory.
             </p>
-            <div className="flex flex-wrap gap-1.5">
+            <div className="flex flex-wrap gap-1.5 ">
               {["Turborepo", "Next.js 14", "TypeScript", "Prisma", "Tailwind","Node.js"].map((tag) => (
                 <span key={tag} className="font-mono text-[10.5px] text-ink-faint border border-line rounded px-2 py-1">
                   {tag}
                 </span>
               ))}
             </div>
+             <div className="flex gap-4 font-mono text-[12.5px] mt-4">
+              <a
+                href="https://github.com/adieesingh/Multi-Tenant-Inventory-SaaS"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-ink-dim hover:text-teal border-b border-transparent hover:border-teal transition-colors"
+              >
+                source ↗
+              </a>
+              </div>
           </div>
 
           <div className="flex flex-col p-6 rounded-xl border border-line bg-bg-card hover:border-teal hover:-translate-y-1 transition-all">

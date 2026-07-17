@@ -1,0 +1,18 @@
+name: Deployment
+on:
+  push:
+    branches:
+      -main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      -name: Checkout code
+      uses: actions/checkout@v4
+
+      -name: Deploy a VM
+      uses: appleboy/ssh-action@v1.0.3
+      with:
+        host: ${{ secerts.SSH_HOST }}
