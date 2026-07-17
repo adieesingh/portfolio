@@ -21,6 +21,6 @@ jobs:
           script: |
             cd /home/ubuntu/portfolo/portfolio
             git pull
-            docker compose up --build
+            sudo docker compose up --build -d
 
          
