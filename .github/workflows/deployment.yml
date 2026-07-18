@@ -19,7 +19,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            #!/bin/bash
             cd /home/ubuntu/portfolo/portfolio
             git pull
             sudo docker compose build --no-cache
