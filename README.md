@@ -25,13 +25,3 @@ components/
 tailwind.config.ts — custom color tokens (bg, teal, amber, etc.) + animations
 ```
 
-## Before deploying
-
-- Swap the placeholder `mailto:`, LinkedIn, and X links in `app/page.tsx` (search for `href="#"` and `you@example.com`)
-- Update the "open to work" line in the hero if that's no longer accurate
-- `npm run build && npm start` for production, or deploy to Vercel / your own Nginx+PM2 setup like the URL shortener
-
-## Notes
-
-- Colors and type scale live in `tailwind.config.ts` — edit there rather than hardcoding hexes in components
-- The terminal's boot sequence is in `components/Terminal.tsx` if you want to change the "services" it lists
