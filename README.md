@@ -23,5 +23,5 @@ components/
   Terminal.tsx     — animated boot-log terminal (client component)
   SectionHeading.tsx
 tailwind.config.ts — custom color tokens (bg, teal, amber, etc.) + animations
-```
+
 
