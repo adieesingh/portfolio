@@ -20,7 +20,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           script: |
             cd /home/ubuntu/portfolo/portfolio
-            git pull
+            git fetch
+            git pull origin main
             sudo docker compose build --no-cache
             sudo docker compose up -d
 
