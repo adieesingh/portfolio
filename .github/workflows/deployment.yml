@@ -19,12 +19,13 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-            #!/bin/bash
+           
             cd /home/ubuntu/portfolo/portfolio
             git fetch
             git pull origin master
             npm install
-            npm run dev
+            npm run build
+            pm2 restart portfolio || pm2 start npm --name portfolio -- start --port 3001
 
 
          
