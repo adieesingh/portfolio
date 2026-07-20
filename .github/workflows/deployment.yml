@@ -25,7 +25,8 @@ jobs:
             git pull origin master
             npm install
             npm run build
-            pm2 restart portfolio || pm2 start npm --name portfolio -- start --port 3001
+            pm2 restart portfolio || pm2 start npm --name portfolio -- start --port 3003
+            sudo nginx -s reload
 
 
          
