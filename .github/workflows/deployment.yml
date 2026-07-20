@@ -22,7 +22,7 @@ jobs:
             cd /home/ubuntu/portfolo/portfolio
             git fetch
             git pull origin master
-            npm install
+            npm ci
             npm run build
             pm2 restart portfolio || pm2 start npm --name portfolio -- start -- -p 3003
             sudo nginx -s reload
