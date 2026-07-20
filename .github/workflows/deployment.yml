@@ -19,12 +19,12 @@ jobs:
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
           script: |
-          
+            #!/bin/bash
             cd /home/ubuntu/portfolo/portfolio
             git fetch
-            git pull origin/master
-            bun install
-            bun run dev
+            git pull origin master
+            npm install
+            npm run dev
 
 
          
