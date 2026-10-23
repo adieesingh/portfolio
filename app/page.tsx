@@ -186,7 +186,7 @@ export default function Home() {
             </div>
             <div className="flex gap-4 font-mono text-[12.5px]">
               <a
-                href="https://shorturlgenerator.adarshdev.pro"
+                href="https://shorturl.adarshdev.pro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink-dim hover:text-teal border-b border-transparent hover:border-teal transition-colors"
