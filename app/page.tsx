@@ -91,9 +91,9 @@ export default function Home() {
               they don&apos;t.
             </p>
             <p>
-              Right now I&apos;m deep in <b className="text-ink font-semibold">Stockline</b>, a multi-tenant
-              inventory SaaS, and keeping a self-hosted URL shortener alive on a cloud Linux VM as a permanent
-              reminder that &ldquo;it works on my machine&rdquo; isn&apos;t shipping.
+              Right now I&apos;m building <b className="text-ink font-semibold">Harness</b>, an AI agent
+              harness in TypeScript, and keeping a self-hosted URL shortener alive on a cloud Linux VM as a
+              permanent reminder that &ldquo;it works on my machine&rdquo; isn&apos;t shipping.
             </p>
           </div>
           <div className="flex flex-wrap gap-2 content-start">
@@ -137,33 +137,34 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
           <div className="flex flex-col p-6 rounded-xl border border-line bg-bg-card hover:border-teal hover:-translate-y-1 transition-all">
             <div className="flex items-center justify-between mb-4">
-              <h3 className="text-xl font-semibold">Stockline</h3>
+              <h3 className="text-xl font-semibold">Harness</h3>
               <span className="flex items-center gap-1.5 font-mono text-[11px] uppercase tracking-wide text-amber before:content-[''] before:w-1.5 before:h-1.5 before:rounded-full before:bg-amber">
                 in progress
               </span>
             </div>
             <p className="text-ink-dim text-[0.92rem] mb-4 flex-1">
-              A multi-tenant inventory SaaS built as a Turborepo monorepo. The Express/Prisma backend handles tenant
-              isolation, authentication and role-based access control on a relational data model that keeps each
-              tenant&apos;s data separate. The Next.js frontend shares packages with the backend and is in progress.
+              A minimal AI agent harness in TypeScript, built from scratch to understand how coding agents work. It
+              runs the model, tool call, tool result loop with streaming output, a provider abstraction over the
+              Anthropic SDK and OpenAI-compatible APIs, and read and bash tools, shipped as an installable{" "}
+              <code className="font-mono text-[0.85em]">mypi</code> CLI.
             </p>
-            <div className="flex flex-wrap gap-1.5 ">
-              {["Turborepo", "Next.js", "TypeScript", "Prisma", "PostgreSQL", "Node.js"].map((tag) => (
+            <div className="flex flex-wrap gap-1.5 mb-4">
+              {["TypeScript", "Node.js", "Anthropic SDK", "OpenAI SDK", "CLI"].map((tag) => (
                 <span key={tag} className="font-mono text-[10.5px] text-ink-faint border border-line rounded px-2 py-1">
                   {tag}
                 </span>
               ))}
             </div>
-             <div className="flex gap-4 font-mono text-[12.5px] mt-4">
+            <div className="flex gap-4 font-mono text-[12.5px]">
               <a
-                href="https://github.com/adieesingh/Multi-Tenant-Inventory-SaaS"
+                href="https://github.com/adieesingh/harness"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink-dim hover:text-teal border-b border-transparent hover:border-teal transition-colors"
               >
                 source ↗
               </a>
-              </div>
+            </div>
           </div>
 
           <div className="flex flex-col p-6 rounded-xl border border-line bg-bg-card hover:border-teal hover:-translate-y-1 transition-all">
