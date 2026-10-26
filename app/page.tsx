@@ -23,9 +23,9 @@ const experience = [
   },
   {
     time: "2024",
-    role: "BE",
+    role: "Bachelor of Engineering",
     org: "Thakur College of Engineering & Technology · CGPA 7.99",
-    desc: "Started in civil engineering, pivoted into software — now completing the Docker & Kubernetes modules of 100xDevs Full Stack Cohort 3.",
+    desc: "Graduated in 2024.",
   },
 ];
 
@@ -85,10 +85,7 @@ export default function Home() {
             </p>
             <p>
               Outside of work, I build in public: shipping side projects, writing up what breaks, and sharing
-              progress as I go through <b className="text-ink font-semibold">100xDevs Cohort 3</b>. I came into
-              software through an unusual door — a <b className="text-ink font-semibold">BE in Civil Engineering</b>{" "}
-              — which mostly taught me that systems, whether concrete or code, fail the same way: quietly, until
-              they don&apos;t.
+              progress as I go.
             </p>
             <p>
               Right now I&apos;m building <b className="text-ink font-semibold">Harness</b>, an AI agent
