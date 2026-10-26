@@ -3,27 +3,27 @@ import Terminal from "@/components/Terminal";
 import SectionHeading from "@/components/SectionHeading";
 
 const stack = [
-  "Node.js", "Express", "TypeScript", "React", "Next.js", "PostgreSQL",
-  "MongoDB", "Prisma", "Docker", "Kubernetes", "AWS Lambda", "GraphQL",
-  "Nginx", "PM2", "Python",
+  "JavaScript", "TypeScript", "Node.js", "Express", "React", "Next.js",
+  "Tailwind CSS", "PostgreSQL", "MongoDB", "Prisma", "Zod", "Docker",
+  "Kubernetes", "AWS EC2", "Nginx", "PM2", "Python", "Git",
 ];
 
 const experience = [
   {
     time: "Apr 2026 — present",
     role: "Junior Node.js Developer",
-    org: "Feat Systems, Mumbai",
-    desc: "Building and maintaining Node.js connectors for the Actionabl RPA platform — fuzzy-matching PO and timesheet files, resume-to-JD matching via multipart POST, browser-automated CSV downloads, and ICS calendar generation, all built on the GenericScriptBase pattern.",
+    org: "Feat System, Mumbai",
+    desc: "Building backend services and REST API integrations in Node.js that connect third-party services with web applications. Work includes invoice reconciliation against purchase orders and goods receipt notes (quantities, rates, taxes, GSTINs) in PostgreSQL, JSON validation and transformation between APIs, and email and calendar integrations with ICS invitations and reusable configuration across projects.",
   },
   {
-    time: "Prior",
+    time: "Dec 2025 — Mar 2026",
     role: "Full Stack Developer Intern",
-    org: "Webloard Infotech & Education Pvt Ltd",
-    desc: "Full-stack development across the Node.js and React ecosystem, getting first hands-on exposure to shipping real product features.",
+    org: "Weblord Infotech",
+    desc: "Worked on a client web application built with React.js and Node.js, where clients fill in and submit their details through forms. Tested the React components and the RESTful APIs, and verified that submitted data was saved and retrieved correctly in the database.",
   },
   {
     time: "2024",
-    role: "BE, Civil Engineering",
+    role: "BE",
     org: "Thakur College of Engineering & Technology · CGPA 7.99",
     desc: "Started in civil engineering, pivoted into software — now completing the Docker & Kubernetes modules of 100xDevs Full Stack Cohort 3.",
   },
@@ -48,9 +48,9 @@ export default function Home() {
             that stay online.
           </h1>
           <p className="text-ink-dim text-[1.05rem] max-w-[46ch] mb-8">
-            Junior Node.js developer at <b className="text-ink font-semibold">Feat Systems</b>, Mumbai — writing RPA
-            connectors, wiring up SaaS backends, and self-hosting side projects on real infrastructure, not just
-            localhost.
+            Junior Node.js developer at <b className="text-ink font-semibold">Feat System</b>, Mumbai — building REST
+            APIs and backend integrations, designing PostgreSQL schemas with Prisma, and self-hosting side projects
+            on real infrastructure, not just localhost.
           </p>
           <div className="flex gap-3.5 flex-wrap">
             <a
@@ -77,10 +77,11 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <div className="text-ink-dim space-y-4">
             <p>
-              I&apos;m a backend-leaning full-stack developer based in Mumbai. My day job is building{" "}
-              <b className="text-ink font-semibold">Node.js connectors for the Actionabl RPA platform</b> —
-              automations that match invoices to POs, generate calendar invites, and move files without anyone
-              touching a Windows path by hand.
+              I&apos;m a backend-focused Node.js developer based in Mumbai, with full-stack experience from a React
+              and Node.js internship. My day job is building{" "}
+              <b className="text-ink font-semibold">backend services and REST API integrations</b> —
+              invoice reconciliation that matches invoices to POs and goods receipts, JSON validation between
+              systems, and email and calendar integrations with ICS invites.
             </p>
             <p>
               Outside of work, I build in public: shipping side projects, writing up what breaks, and sharing
@@ -91,8 +92,8 @@ export default function Home() {
             </p>
             <p>
               Right now I&apos;m deep in <b className="text-ink font-semibold">Stockline</b>, a multi-tenant
-              inventory SaaS, and keeping a self-hosted URL shortener alive on an Azure VM as a permanent reminder
-              that &ldquo;it works on my machine&rdquo; isn&apos;t shipping.
+              inventory SaaS, and keeping a self-hosted URL shortener alive on a cloud Linux VM as a permanent
+              reminder that &ldquo;it works on my machine&rdquo; isn&apos;t shipping.
             </p>
           </div>
           <div className="flex flex-wrap gap-2 content-start">
@@ -142,12 +143,12 @@ export default function Home() {
               </span>
             </div>
             <p className="text-ink-dim text-[0.92rem] mb-4 flex-1">
-              A multi-tenant inventory SaaS built as a Turborepo monorepo. Express/Prisma backend complete;
-              scaffolding the Next.js 14 App Router frontend with reusable component packages and a generic CRUD API
-              client factory.
+              A multi-tenant inventory SaaS built as a Turborepo monorepo. The Express/Prisma backend handles tenant
+              isolation, authentication and role-based access control on a relational data model that keeps each
+              tenant&apos;s data separate. The Next.js frontend shares packages with the backend and is in progress.
             </p>
             <div className="flex flex-wrap gap-1.5 ">
-              {["Turborepo", "Next.js 14", "TypeScript", "Prisma", "Tailwind","Node.js"].map((tag) => (
+              {["Turborepo", "Next.js", "TypeScript", "Prisma", "PostgreSQL", "Node.js"].map((tag) => (
                 <span key={tag} className="font-mono text-[10.5px] text-ink-faint border border-line rounded px-2 py-1">
                   {tag}
                 </span>
@@ -173,12 +174,12 @@ export default function Home() {
               </span>
             </div>
             <p className="text-ink-dim text-[0.92rem] mb-4 flex-1">
-              Self-hosted URL shortener running on an Azure VM behind Nginx, kept alive with PM2. Built as a
-              Turborepo monorepo with a Next.js frontend, Express backend, and Zod-validated Prisma/PostgreSQL
-              storage.
+              Self-hosted full-stack URL shortener in a Turborepo monorepo: a Next.js frontend and Express REST APIs
+              for short URLs, custom aliases and redirects, with Zod input validation and Prisma/PostgreSQL storage.
+              Deployed on a cloud Linux VM behind an Nginx reverse proxy, kept alive with PM2, on a custom domain.
             </p>
             <div className="flex flex-wrap gap-1.5 mb-4">
-              {["Next.js", "Express", "Prisma", "Azure VM", "Nginx","Node.js"].map((tag) => (
+              {["Next.js", "Express", "Prisma", "Zod", "Nginx", "Node.js"].map((tag) => (
                 <span key={tag} className="font-mono text-[10.5px] text-ink-faint border border-line rounded px-2 py-1">
                   {tag}
                 </span>
@@ -186,7 +187,7 @@ export default function Home() {
             </div>
             <div className="flex gap-4 font-mono text-[12.5px]">
               <a
-                href="https://shorturl.adarshdev.pro"
+                href="https://shorturlgenerator.adarshdev.pro"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-ink-dim hover:text-teal border-b border-transparent hover:border-teal transition-colors"
@@ -221,7 +222,7 @@ export default function Home() {
               email me
             </a>
             <a
-              href="https://github.com/adieesingh"
+              href="https://github.com/adieesingh/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-[13px] px-6 py-3 rounded-md border border-line text-ink hover:border-teal hover:text-teal hover:-translate-y-0.5 transition-all"
@@ -229,7 +230,7 @@ export default function Home() {
               github
             </a>
             <a
-              href="https://www.linkedin.com/in/adarsh-singh-116ba0249"
+              href="https://www.linkedin.com/in/adarsh-singh-116ba0249/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-[13px] px-6 py-3 rounded-md border border-line text-ink hover:border-teal hover:text-teal hover:-translate-y-0.5 transition-all"
@@ -237,7 +238,7 @@ export default function Home() {
               linkedin
             </a>
             <a
-              href="https://x.com/AdarshSingh1606"
+              href="https://x.com/AdarshSingh1606/"
               target="_blank"
               rel="noopener noreferrer"
               className="font-mono text-[13px] px-6 py-3 rounded-md border border-line text-ink hover:border-teal hover:text-teal hover:-translate-y-0.5 transition-all"
